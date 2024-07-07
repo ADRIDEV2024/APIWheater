@@ -40,7 +40,7 @@ def search():
     city = city_entry.get()
     result = get_weather(city)
     if result is None:
-        return 
+    return 
     
     icon_url, temperature, description, city, country = result
     icon = fetch_weather_icon(icon_url)
