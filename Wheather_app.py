@@ -19,6 +19,7 @@ def fetch_weather_icon(icon_url):
     try:
         image = Image.open(req.get(icon_url, stream=True).raw)
         return ImageTk.PhotoImage(image)
+        
     except Image.UnidentifiedImageError as error:
         print(f"Error fetching weather icon: {error}")
         return None
@@ -61,7 +62,7 @@ search_button.pack(pady=10)
 location_label = tk.Label(root, font="Cambria, 19")
 location_label.pack(pady=18)
 
-# LABEL WIDGET TO SHOW THE WEATHER ICON
+
 
 icon_label = tk.Label(root)
 icon_label.pack()
