@@ -47,9 +47,8 @@ def search():
     update_ui(icon, temperature, description, city, country)
 
     
-# ENTRY WIDGET TO ENTER THE CITY NAME
 
-city_entry = ttkb.Entry(root, font="Cambria, 14")
+city_entry = ttkb.Entry(root, font="Cambria, 14") # ENTRY WIDGET TO ENTER THE CITY NAME
 city_entry.pack(pady=10)
 
 # BUTTON WIDGET TO FOUND WEATHER INFO 
