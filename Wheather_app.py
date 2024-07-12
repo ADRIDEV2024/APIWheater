@@ -56,12 +56,8 @@ city_entry.pack(pady=10)
 search_button = ttkb.Button(root, text="Search", command=search, bootstyle="warning")
 search_button.pack(pady=10)
 
-
-
 location_label = tk.Label(root, font="Cambria, 19") # LABEL WIDGET TO SHOW THE LOCATION NAME 
 location_label.pack(pady=18)
-
-
 
 icon_label = tk.Label(root)
 icon_label.pack()
