@@ -46,8 +46,6 @@ def search():
     icon = fetch_weather_icon(icon_url)
     update_ui(icon, temperature, description, city, country)
 
-    
-
 city_entry = ttkb.Entry(root, font="Cambria, 14") # ENTRY WIDGET TO ENTER THE CITY NAME
 city_entry.pack(pady=10)
 
@@ -67,8 +65,6 @@ temperature_lbl.pack()
 
 description_label = tk.Label(root, font="Cambria, 16")
 description_label.pack()
-
-    
 
 # Parse the response in JSON to get weather information
 
