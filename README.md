@@ -1,6 +1,6 @@
-# APIWheater
+## APIWheater
 
-
+![istockphoto-151929560-612x612](https://github.com/user-attachments/assets/238c15ba-9db2-4b6a-b068-53756448fb41)
 
 En este proyecto programo una GUI con Tkinter que se encarga de consultar el clima actual por ciudad y país,gracias a la librería requests y la API OpenWeatherMap.Para que la interfaz funcione como es debido,he creado una función para consultar el clima y la temperatura de la ubicación que el usuario quiera consultar además de otra que se encarga de buscar y comprabar si existe una localización concreta.Aplicación muy simple pero eficaz en sus funciones. 
 
