@@ -1,4 +1,4 @@
-import tkinter as tk
+from tkinter import *
 import requests as req
 from tkinter import Label, Entry
 from PIL import Image, ImageTk
