@@ -20,7 +20,7 @@ def fetch_weather_icon(icon_url):
         image = Image.open(req.get(icon_url, stream=True).raw)
         return ImageTk.PhotoImage(image)
         
-    except error:
+    except Image.UnidentifiedImageError as  error:
         print(f"Error fetching weather icon: {error}")
         return None
 
@@ -40,7 +40,7 @@ def search():
     city = city_entry.get()
     result = get_weather(city)
     if result is None:
-    return 
+    continue
     
     icon_url, temperature, description, city, country = result
     icon = fetch_weather_icon(icon_url)
