@@ -1,4 +1,4 @@
-from tkinter import *
+import tkinter as tk
 import requests as req
 from tkinter import Label, Entry
 from PIL import Image, ImageTk
@@ -20,7 +20,7 @@ def fetch_weather_icon(icon_url):
         image = Image.open(req.get(icon_url, stream=True).raw)
         return ImageTk.PhotoImage(image)
         
-    except Image.UnidentifiedImageError as error:
+    except error:
         print(f"Error fetching weather icon: {error}")
         return None
 
