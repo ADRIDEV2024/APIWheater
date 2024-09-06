@@ -17,9 +17,7 @@ wheels/
 share/python-wheels/
 .egg-info/
 .installed.cfg
-*.egg
-
-
+*.eggs
 
 # Unit test / coverage reports
 htmlcov/
