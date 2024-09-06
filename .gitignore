@@ -13,9 +13,6 @@ build/
 develop-eggs/
 dist/
 downloads/
-eggs/
-.eggs/
-lib/
 wheels/
 share/python-wheels/
 .egg-info/
